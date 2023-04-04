@@ -1,0 +1,81 @@
+.padding {
+    padding: 0px 30px 0px 30px
+}
+
+.h2_border  {
+    flex: 0 0 20%;
+    text-align: right;
+    padding: 0px 15px 0px 0px;
+    border-right: 4px solid black;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-item {
+    color: black;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 9px;
+    text-decoration: none;
+    background-size: 150%;
+    font-size: 20px;
+  }
+
+  .linesImg {
+    background-image: url("../img/Lines_img.jpg");
+  }
+
+  .flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item div {
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 30px;
+}
+
+  @media screen and (max-width: 860px) {
+    .spacing {
+        display: flex;
+      justify-content: center;
+    }
+
+    .h2_border {
+        flex: 0 0 20%;
+        text-align: center;
+        padding: 0px 15px 0px 0px;
+        border-bottom: 4px solid black;
+        border-right: 0px;
+        flex-direction: column;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+    .section {
+        flex-direction: column;
+    }
+
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+
+
+}
