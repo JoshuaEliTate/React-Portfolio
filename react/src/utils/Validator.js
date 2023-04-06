@@ -10,4 +10,20 @@ const sendEmailValidationRequest = async (email) => {
     } catch (error) {
         throw error;
     }
+  
+ const sendEmailValidationRequest = async (email) => {
+  try {
+      const response = await fetch(apiURL + '&email=' + email);
+      const data = await response.json();
+      const isValidSMTP = data.is_smtp_valid.value;
+
+      if (isValidSMTP) {
+          // use the email address in the mailto link
+      } else {
+          // show the user an error
+      }
+  } catch (error) {
+      throw error;
+  }
+}
 }

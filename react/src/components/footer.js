@@ -42,7 +42,7 @@ export default function StickyFooter() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            My sticky footer can be found here.
+            Thank you for looking at my Portfolio
           </Typography>
           <Copyright />
         </Container>

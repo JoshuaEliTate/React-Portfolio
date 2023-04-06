@@ -3,7 +3,7 @@ import '../styles/Home.css'
 const HomePage = ()=> {
     return (
     <section>
-        <figure class="flex">
+        <figure className="flex">
             <img src={require("../img/IMG_2610.jpg")} alt="A head picture of Josh Torres" width="100%"/>
         </figure>
         <section className="flex black">

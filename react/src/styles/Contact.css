@@ -1,0 +1,25 @@
+.align {
+    margin: 125px 50px 125px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-style: solid;
+}
+
+.alignDiv {
+    padding-bottom: 15px;
+    flex-direction: column;
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    .align {
+        margin: 200px 50px 200px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        border-style: solid;
+    }
+}

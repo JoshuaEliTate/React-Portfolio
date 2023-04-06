@@ -5,6 +5,9 @@
     align-items: center;
 }
 
+b {
+    text-align: center;
+}
 .section {
     margin: 25px 0;
     display: flex;

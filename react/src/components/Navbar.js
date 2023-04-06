@@ -9,7 +9,7 @@ const styles = {
     display: "flex",    
     "justify-content": "space-between",    
     "flex-direction": "row",    
-    "flex-wrap": "wrap"
+    // "flex-wrap": "wrap"
     },
     listItem: {
       height: "30px",
