@@ -5,6 +5,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 
+
+
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
@@ -26,7 +28,7 @@ export default function StickyFooter() {
         flexDirection: 'column',
         // minHeight: '100vh', 
       }}
-    >
+ >
       <CssBaseline />
       <Box
         component="footer"
@@ -42,7 +44,9 @@ export default function StickyFooter() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            Thank you for looking at my Portfolio
+            <a href="https://github.com/JoshuaEliTate" target="_blank">GitHub</a>
+            <p></p>
+            <a href="https://www.linkedin.com/in/joshua-torres-800491242" target="_blank">linkedin</a>
           </Typography>
           <Copyright />
         </Container>

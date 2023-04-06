@@ -6,7 +6,9 @@ const styles = {
       // "flex-wrab": "wrap"
       margin: "60px"
       },
-  
+    align: {
+        "text-align": "center"
+    }
   };
 
 const Resume = ()=> {
