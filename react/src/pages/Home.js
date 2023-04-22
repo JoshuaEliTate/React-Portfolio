@@ -10,8 +10,7 @@ const HomePage = ()=> {
             <div className="section padding">
                 <h2 className="h2_border">About Me</h2>
                 <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates porro deserunt laborum nobis dignissimos incidunt maiores nihil, voluptatibus, quis eligendi atque quia commodi, expedita aliquam vel eaque ex recusandae ipsa.</p>
-                    <p>Lorem ipsum dolor sit amet consectestur adipisicing elit. Repellat provident autem vero accusamus, asperiores nulla adipisci tempora sint quidem quos ratione. Fugit quas non quaerat quam veritatis, sapiente doloribus minima? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus illum, dolorem eveniet provident optio aut, hic nihil, saepe est harum omnis ratione sint earum nostrum nesciunt voluptas! Incidunt, placeat adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore modi molestias ducimus, reprehenderit error repellat. Voluptate, unde ratione beatae quis dolorum neque quos obcaecati. Magni molestias atque ullam temporibus aliquam!</p>
+                    <p>Full Stack web developer leveraging a background in customer service to provide great communication and patience. Earned a certificate in Full Stack Web Development from the University Of Washington Coding Boot Camp. Innovative problem-solver who is enthusiastic about developing apps with a primary focus on mobile design first. Strengths in teamwork, creativity, ingenuity, and building projects from ideas to finished Applications.</p>
                 </div>
             </div>
         </section>
