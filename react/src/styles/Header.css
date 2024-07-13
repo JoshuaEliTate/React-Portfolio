@@ -1,7 +1,4 @@
-.header {
-  background: #b71775;
-  height: 200px;
-}
+
 
 .header h1 {
   margin: 0;
@@ -9,4 +6,30 @@
   text-align: center;
   color: white;
   font-size: 3rem;
+}
+
+.centerify {
+  background:rgb(38, 38, 38) ;
+  margin: 50px;
+  border-radius: 20px;
+  margin: 50px 20% 0px 20%;
+}
+
+.logoSize {
+  width: 50px;
+  /* margin: 20px 20px -30px 20px; */
+}
+
+
+@media screen and (max-width: 500px) {
+  /* .logoSize {
+    width: 50px;
+    margin: 20px 20px 15px 20px;
+    
+  } */
+  .centerify {
+    text-align: center;
+    margin: 50px 5% 0px
+  }
+
 }

@@ -5,6 +5,67 @@
     align-items: center;
 }
 
+.flexer{
+    display: flex;
+    margin: 50px 20% 0px 20%;
+    justify-content: space-between;
+    background: rgb(38, 38, 38);
+    background-clip: padding-box;
+    border-radius: 25px;
+    padding: 45px
+}
+
+.paddingLeft{
+    padding-left: 15px;
+}
+
+.large{
+    font-size: 31px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.xlarge{
+    font-size: 40px;
+}
+
+.xxlarge{
+    font-size: 65px;
+}
+
+.gradientText{
+    background: linear-gradient(to right, #f88912bd, #cc0345c7);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.gradientBackground{
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(to right, #f88912bd, #cc0345c7);
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px;
+}
+.imgAlign {
+    align-self: center;
+    margin: 0px;
+    /* width: 36%; */
+    display: inline-block;
+    text-align: center;
+}
+.width {
+    width: 60%;
+}
+
+.border {
+    border-radius: 300px;
+    min-width: 100px;
+    max-width: 400px;
+    opacity: .5;
+}
+
+
+
 b {
     text-align: center;
 }
@@ -14,32 +75,64 @@ b {
     flex-direction: row;
     justify-content: space-between;
 }
-
+.leftBorder{
+    padding-left: 25px;
+    /* border-left: 4px solid #000;    */
+}
 .padding {
-    padding: 0px 30px 0px 30px
+    /* margin-top: -3%; */
+    margin: 50px 20% 0px 20%;
+    background: rgb(38, 38, 38);
+    background-clip: padding-box;
+    padding: 15px;
+    border-radius: 25px;
 }
 
 .h2_border  {
-    flex: 0 0 20%;
-    text-align: right;
-    padding: 0px 15px 0px 0px;
-    border-right: 4px solid black;
+    margin-top: 0px;
+    color: #ee8c24ad;
 }
 
-@media screen and (max-width: 860px) {
+.stockImg{
+    border-Radius: '50%';
+    /* object-Fit: 'cover';  */
+    background: 'radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%)',  
+}
+
+     /* flex: 0 0 20%; 
+     text-align: right; 
+     padding: 0px 15px 0px 0px;
+    border-right: 4px solid #F0F7F4;  */
+
+@media screen and (max-width: 950px) {
     .spacing {
         display: flex;
       justify-content: center;
     }
-
+    .leftBorder{
+        padding-left: 0px;
+        border-left: 0px;   
+    }
     .h2_border {
-        flex: 0 0 20%;
+        /* flex: 0 0 20%; */
         text-align: center;
         padding: 0px 15px 0px 0px;
-        border-bottom: 4px solid black;
+        border-bottom: 4px solid #000000;
         border-right: 0px;
         flex-direction: column;
     }
+
+    .flexer{
+        padding: 50px 50px 0px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .padding {
+        /* margin-top: -1%; */
+        padding: 50px 25px 0px
+    }
+    
 
     .flex {
         display: flex;
@@ -56,5 +149,46 @@ b {
         min-height: 150px;
     }
 
+    .large{
+        font-size: 21px;
+        margin: 0;
+        font-weight: lighter;
+    }
+    
+    .xlarge{
+        font-size: 25px;
+    }
+    
+    .xxlarge{
+        font-size: 35px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .flexer{
+        margin: 15px 5% 0px;
+    }
+
+    .padding {
+        margin: 15px 5% 0px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .flexer{
+        margin: 15px 5% 0px;
+        flex-direction: column;
+    }
+
+    .padding {
+        margin: 15px 5% 0px;
+    }
+
+    .border {
+        display: none;
+    }
 
 }

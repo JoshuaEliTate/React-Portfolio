@@ -1,49 +1,28 @@
 import PDF from '../documents/resume.pdf'
 const styles = {
-    flex: {
-      display: "flex",        
-      "flex-direction": "column",    
-      // "flex-wrab": "wrap"
-      margin: "60px"
+    center: {
+        "padding-top": "80px"
       },
     align: {
-        "text-align": "center"
+        "text-align": "center",
+        padding: "0% 25%",
+        "padding-top": "10%"
+    },
+    decoration:{
+        "text-decoration": "none",
+        color: "#B3BFB8"
     }
   };
 
 const Resume = ()=> {
     return (
-        <div style={styles.flex}>  
-            <a href={PDF} target="_blank" class="flex-item linesImg">
-                <div>
-                    <h3>My Resume</h3>
-                </div>
+        <div style={styles.align}>  
+        <a style={styles.decoration} href={PDF} target="_blank">View Resume</a>
+            <a href={PDF} target="_blank" class="resumeSize resumeIcon">
+
             </a>
         </div>
     )
 }
 
 export default Resume;
-
-
-{/* <b>● HTML/CSS/Git </b>
-<b>● JavaScribt </b>
-<b>● Bootstrab</b>
-<b>● The DOM</b>
-<b>● APIs</b>
-<b>● JQuery</b>
-<b>● JSON</b>
-<b>● AJAX</b>
-<b>● Node</b>
-<b>● ES6</b>
-<b>● Exbress</b>
-<b>● MySQL</b>
-<b>● MVC baradigm</b>
-<b>● Sequelize</b>
-<b>● Testing</b>
-<b>● Agile develobment</b>
-<b>● Agile develobment</b>
-<b>● Progressive Web Abs</b>
-<b>● React</b>
-<b>● NoSQL</b>
-<b>● MERN Stack</b> */}

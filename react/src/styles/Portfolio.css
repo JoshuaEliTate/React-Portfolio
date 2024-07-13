@@ -1,13 +1,8 @@
-.padding {
+.portPadding {
     padding: 0px 30px 0px 30px
 }
 
-.h2_border  {
-    flex: 0 0 20%;
-    text-align: right;
-    padding: 0px 15px 0px 0px;
-    border-right: 4px solid black;
-}
+
 
 .flex {
     display: flex;
@@ -18,26 +13,83 @@
 
 .flex-item {
     color: black;
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 350px;
+    /* max-height: 300px; */
     flex-basis: calc(50% - 1em);
     display: flex;
     align-items: flex-end;
     padding: 0 0 20px 0;
-    margin: 9px;
     text-decoration: none;
-    background-size: 150%;
+    background-size: 100%;
     font-size: 20px;
+    background-repeat: no-repeat;
+    margin: 75px 30px 0px;
   }
 
   .linesImg {
     background-image: url("../img/Lines_img.jpg");
   }
+  .greenImg {
+    background-image: url("../img/greenBack.jpg");
+    color: #B3BFB8;
+  }
 
-  .flex-item:first-child {
+  .skillSwapImg {
+    background-image: url("../img/skillSwap.jpg");
+    color: #232d27;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .chatDownImg {
+    background-image: url("../img/chatDown.jpg");
+    color: #232d27;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .expRecipeImg {
+    background-image: url("../img/expRecipe.jpg");
+    color: #232d27;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .employeeTrackerImg {
+    background-image: url("../img/employeeTracker.jpg");
+    color: #232d27;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+  }
+  .socialNetworkImg {
+    background-image: url("../img/socialNetwork.JPG");
+    color: #232d27;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .noteTakerImg {
+    background-image: url("../img/noteTaker.JPG");
+    color: #232d27;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .resumeIcon {
+    background-image: url("../img/resumeIcon.jpg");
+    color: #B3BFB8
+  }
+
+  /* .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
-}
+} */
 
 .flex-item div {
   padding: 8px 10px;
@@ -46,6 +98,95 @@
 .flex-item h3 {
   font-size: 30px;
 }
+.resumeSize{
+  color: black;
+  height: 200px;
+  display: flex;
+  margin-top: 50px;
+  margin: 40%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  display: block;
+  align-self: center;
+  width: 45%;
+  margin-block: auto;
+}
+.block {
+  display: block;
+  padding: 0px;
+  align-self: center;
+  width: 100%;
+  height: 200px;
+}
+
+.marginPort{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  /* margin-top: 2%; */
+  flex-direction: column;
+  align-content: center;
+}
+
+.main-header {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card {
+  flex: 3 0 auto;
+  padding: px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  /* width: 35%; */
+  background: rgb(38, 38, 38);
+  margin: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  border-color: rgb(45, 45, 45);
+  margin: 50px 20% 0px 20%;
+  width: -webkit-fill-available;
+  border-radius: 25px;
+}
+
+.card header {
+  padding: 20px;
+  background: #3C493F;
+  color: #F0F7F4;
+}
+
+.card img {
+  width: 100%;
+  min-width: 400px;
+}
+
+.projectName {
+  text-align: start;
+  /* padding-left: 50px; */
+  font-size: 50px;
+  background: linear-gradient(to right, #f88912bd, #cc0345c7);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+
+
 
   @media screen and (max-width: 860px) {
     .spacing {
@@ -68,6 +209,9 @@
         flex-wrap: wrap;
         align-items: stretch;
     }
+    .flex-item {
+      margin: 0px 30px 0px;
+  }
     
     .section {
         flex-direction: column;
@@ -77,5 +221,41 @@
         min-height: 150px;
     }
 
+    .card {
+      flex: 3 0 auto;
+      padding: 10px;
+      text-align: center;
+      border-style: solid;
+      border-width: 1px;
+    }
+
 
 }
+
+@media screen and (max-width: 500px) {
+  .flex-item {
+    color: black;
+    min-height: 100px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 9px;
+    text-decoration: none;
+    background-size: 100%;
+    font-size: 20px;
+    background-repeat: no-repeat;
+  }
+
+
+  .card {
+    margin: 15px 5% 0px
+  }
+
+  .projectName {
+    font-size: 35px;
+  }
+}
+
+

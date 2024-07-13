@@ -2,14 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 // Here we import the Navbar.css file to grant access to some additional classNames
 import '../styles/Navbar.css';
+import PDF from '../documents/resume.pdf'
 
 // TODO: Create a styles object called "styles"
 const styles = {
   list: {
+    "list-style": "none",
+    margin: "auto",
     display: "flex",    
-    "justify-content": "space-between",    
+    placeContent: 'center',  
     "flex-direction": "row",    
-    // "flex-wrap": "wrap"
+    "flex-wrap": "wrap"
     },
     listItem: {
       height: "30px",
@@ -39,9 +42,9 @@ const Navbar = ({ setCurrentPage }) => {
                 </Link>
             </li>
             <li  style={styles.listItem}>
-                <Link to="/resume">
-                    <p>Resume</p>
-                </Link>
+            <a style={styles.decoration} href={PDF} target="_blank">
+                <p>Resume</p>
+            </a>
             </li>
         </ul>
     </nav>

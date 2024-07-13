@@ -1,59 +1,48 @@
 import React from 'react';
 // Here we import the Header.css file to grant access to some additional classNames
 import Navbar from './Navbar';
+import '../styles/Header.css'
 
 const styles = {
-  headerH1: {
-    margin: 0,
-    "paddingTop": "75px",
-    "textAlign": "center",
-    color:  "black",
-    "fontSize": "3rem"
-  },
+
   spacing: {
     display: 'flex',
-    "justifyContent": "space-between",
+    placeContent: 'center',
     "flexDirection": 'row',
     "flexWrap": "wrap",
+    // "paddingBottom": "15px",
   },
-  flex: {
+
+  header: {
     display: 'flex',
     "flexDirection": 'row',
+    "flexWrap": 'wrap',
     "alignItems": 'center',
-  },
-  box: {
-    'backgroundColor': 'rgb(53, 53, 53)',
-    padding: '5px 20px 5px 20px',
-    'marginTop': '15px',
-    'marginBottom': '10px',
-},
-header: {
-  display: 'flex',
-  "flexDirection": 'row',
-  "flexWrap": 'wrap',
-  "alignItems": 'center',
-  color: 'white',
-  'borderBottom': '5px',
-  'borderBottomStyle': 'solid',
-  'borderColor': 'rgb(30, 30, 30)',
-  'backgroundColor': 'rgb(97, 96, 96)',
-  width: '100%',
-  'lineHeight': 'unset',
-  padding: '0px',
-  'justifyContent': 'space-between',
-}
+    color: 'white',
+    width: '100%',
+    'lineHeight': 'unset',
+    padding: '0px',
+    "margin-top": "-25px",
+    'justifyContent': 'flex-end',
+    display: 'flex',
+    background: '#262626',
+    borderRadius: '20px',
+    justifyContent: 'center',
+    padding: '10px 0px',
+  }
 
 }
 function Header() {
 
   return (
-    <header className="header" style={styles.header}>
-            <figure className="flex" style={styles.flex}>
-                <h1 className="box" style={styles.box}>Josh Torres</h1>
-            </figure>
+
+    <header className='centerify'>
+      <section className="header" style={styles.header}>
+      <img className='logoSize' src={require("../img/Logo.JPG")} alt="A logo of JT"/>
             <nav className="spacing"style={styles.spacing}>
               <Navbar />
             </nav>
+      </section>
 
     </header>
 
@@ -61,3 +50,8 @@ function Header() {
 }
 
 export default Header;
+
+
+// {/* <figure className="flex" style={styles.flex}>
+// <h1 className="box" style={styles.box}>Josh Torres</h1>
+// </figure> */}
